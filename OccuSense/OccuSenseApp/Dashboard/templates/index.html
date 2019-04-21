@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Occ</title>
+<style>
+body {
+  background-color: black;
+  text-align: center;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+</style>
+</head>
+<body>
+
+<h1>OccuSense</h1>
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {
+  font-family: Arial;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+form.example input[type=text] {
+  padding: 6px;
+  font-size: 13px;
+  border: 1px solid grey;
+  float: left;
+  width: 80%;
+  background: #f1f1f1;
+}
+
+form.example button {
+  float: left;
+  width: 20%;
+  padding: 4px;
+  background: #2196F3;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none;
+  cursor: pointer;
+}
+
+form.example button:hover {
+  background: #0b7dda;
+}
+
+form.example::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+</style>
+</head>
+<body>
+
+
+<h3>Find the restaurant you want to go to!</h3>
+<form class="example" action="/action_page.php" style="margin:auto;max-width:300px">
+  <input type="text" placeholder="Search.." name="search2">
+  <button type="submit"><i class="fa fa-search"></i></button>
+</form>
+
+<br>
+<br>
+<br>
+<br>
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+</style>
+</head>
+<body>
+
+{% load staticfiles %}
+
+<div class="row">
+  <div class="column">
+    <img src="{% static "Dashboard/chipotle.jpg" %}" alt="Snow" style="width:100%">
+    <span class="caption"><a href="{% url 'page' %}"><b>5 Minutes</b></a></span>
+  </div>
+  <div class="column">
+    <img src="{% static "Dashboard/wendys.jpg" %}" style="width:100%">
+    <span class="caption"><a href="page2.html"><b>8 Minutes</b></a></span>
+  </div>
+  <div class="column">
+    <img src="{% static "Dashboard/tb.jpg" %}" style="width:100%">
+    <span class="caption"><a href="page2.html"><b>No wait!</b></a></span>
+  </div>
+</div>
+
+<div class="row">
+  <div class="column">
+    <img src="{% static "Dashboard/ihop.jpg" %}" alt="Snow" style="width:100%">
+    <span class="caption"><a href="page2.html"><b>1 Minute</b></a></span>
+  </div>
+  <div class="column">
+    <img src="{% static "Dashboard/choolah.jpg" %}" style="width:100%">
+    <span class="caption"><a href="page2.html"><b>22 Minutes</b></a></span>
+  </div>
+  <div class="column">
+    <img src="{% static "Dashboard/arbys.jpg" %}" style="width:100%">
+    <span class="caption"><a href="page2.html"><b>6 Minutes</b></a></span>
+  </div>
+</div>
+
+
+</body>
+</html>
