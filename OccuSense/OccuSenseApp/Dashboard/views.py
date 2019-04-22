@@ -10,6 +10,9 @@ array = []
 def index(request):
     return render(request, 'index.html')
 
+def page(request):
+    return render(request,'page2.html', name = 'page')
+
 @csrf_exempt
 def data(request):
     x = 123
